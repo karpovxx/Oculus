@@ -43,21 +43,32 @@ body {
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     height: 80px;
+    // display: flex;
+    // justify-content: center;
+    align-items: center;
+    // height: 80px;
 }
-
+.logo {
+    justify-self: center;
+}
 .menu {
     display: flex;
     gap: 0 20px;
+    &__link {
+        text-decoration: none ;
+    }
 }
-
+ul, li {
+    list-style: none;
+}
  
 
 .basket {
     position: relative;
+    justify-self: end;
 }
 .basket--on span {
     font-size: 12px;
@@ -87,6 +98,7 @@ body {
     padding-top: 16%;
     font-size: 96px;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .subtitle {
@@ -111,6 +123,7 @@ body {
 .buy-btn__text {
     padding: 20px 110px;
     color: #F6F4F5;
+    text-transform: uppercase;
      
 }
 
@@ -118,6 +131,96 @@ body {
     background-color: #F6F4F5;
     padding: 20px 104px;
 }
+
+.features {
+    padding: 100px 0;
+}
+
+.features__titles {
+    display: flex;
+}
+.features__title {
+    flex-basis: 300px;
+    padding-right: 20px;
+}
+.section-title {
+    text-transform: uppercase;
+}
+.features__text {   // Текст градиент
+    max-width: 330px;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 2px;
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: 300px auto;
+    &__btn-item {
+            font-weight: 700;
+            margin-bottom: 20px; 
+            &-active {
+                color: black;
+            }
+        }
+    }
+.tabs__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+ 
+
+button {
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+}
+.tabs__content-item {
+    display: grid;
+    grid-template-columns: auto 280px;
+    grid-template-rows: auto 150px;
+    gap: 40px;
+    position: absolute;
+     
+}
+.tabs__content {
+    position: relative;
+    min-height: 300px;
+}
+
+.tabs__content h3 {
+    font-weight: 700;
+}
+.tabs__content-img {
+    grid-row: 1 / -1;
+}
+.video {
+     
+    grid-column: 2 / 3;
+
+    width: 280px;
+    height: 150px;
+    background-image: url('../img/contentbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    &__btn {
+        margin: 20px;
+    }
+}
+ 
 
 
 
