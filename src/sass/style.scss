@@ -220,6 +220,68 @@ button {
         margin: 20px;
     }
 }
+
+.game {
+    margin-bottom: 100px;
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__descr {
+        padding-right: 10px;
+        &-title {
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 36px;
+        margin-bottom: 10px;
+        }
+        &-text {
+            margin-bottom: 24px;
+        }
+    }
+    &__link {
+        display: inline-block;
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 16px 15px 12px;
+        border: 1px solid #BC10D8;
+        width: 225px;
+        text-align: center;
+
+    }
+    &__item {
+        border: 1px solid #BC10D8;
+        padding: 18px 20px 18px;
+        display: flex;
+        flex-direction: column;
+        &-img {
+        margin-bottom: 10px;
+        }
+        &-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        &-text {
+             
+        }
+        &-link {
+            background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: auto;
+        }
+    }
+     
+    
+}
  
 
 
