@@ -238,7 +238,7 @@ button {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 36px;
-        margin-bottom: 10px;
+        margin-bottom: 10px;//#BC10D8
         }
         &-text {
             margin-bottom: 24px;
@@ -282,7 +282,90 @@ button {
      
     
 }
- 
+.buy {
+    text-align: center;
+    margin-bottom: 110px;
+    position: relative;
+    overflow-x: hidden; // Чтобы не было по иксу скролла 
+    &__bg {
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 400px;
+        line-height: 350px;
+        font-weight: 700;
+        opacity: 0.1;
+        position: absolute; 
+        z-index: -1;
+        animation: line-text 6s linear 1s infinite;
+    }
+    @keyframes line-text {
+        from {
+            transform: translateX(115%);
+            transform-origin: left center;
+        }
+        to {
+            transform: translateX(-115%);
+            transform-origin: right center;
+        }
+    }
+     
+}
+.buy .buy-btn {
+    margin: 0 auto;
+}
+
+
+
+
+ .equipment {
+    margin-bottom: 100px;
+}
+
+.container {
+
+}
+
+.equipment__title {
+    margin-bottom: 50px;
+}
+
+.section-title {
+
+}
+
+.equipment__box {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 20px;
+}
+
+.equipment__box-item 
+{
+}
+
+.equipment__box-img {
+    margin-bottom: 10px;
+}
+
+.equipment__box-text 
+{
+}
+
+.equipment__box-subtitle {
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 36px;
+
+}
+.equipment__box-item--one {
+    grid-row: 1/-1;
+}
+
+
 
 
 
