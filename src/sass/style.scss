@@ -478,6 +478,82 @@ button {
 
 
 
+.contacts {
+    margin-bottom: 100px;
+}
+
+.contacts__title {
+    font-size: 24px;
+    line-height: 33px;
+    color: #000;
+}
+
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contacts__form {
+    flex-basis: 600px;
+}
+
+.form {
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    
+     
+}
+
+.form__input {
+     
+    border: none;
+    border-bottom: 1px solid #CACAD6;
+    width: 100%;
+    padding: 22px 70px 22px 0;
+    
+}
+.form__input::placeholder {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #CACAD6;
+}
+
+.form__btn {
+    width: 50px;
+    height: 50px;
+    background-color: #CACAD6;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #5c5c5e;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+
+}
+
+.contacts__text {
+    font-size: 13px;
+}
+
+.contacts__email {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 
